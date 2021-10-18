@@ -39,7 +39,7 @@ data class PersonDetails (
     val collusion: kotlin.Array<PersonSimple>? = null,
     /* A list of Alias */
     val aliases: kotlin.Array<PersonSimple>? = null,
-    val behavior: PersonBehavior? = null,
+    val behavior: PersonBehavior = PersonBehavior(),
     val secondary: PersonSecondaryData? = null
 ) {
 }

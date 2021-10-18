@@ -22,10 +22,10 @@ package io.swagger.client.models
  */
 data class PersonBehavior (
 
-    val smoke: kotlin.Boolean? = null,
-    val escape: kotlin.Boolean? = null,
-    val violent: kotlin.Boolean? = null,
-    val suicide: kotlin.Boolean? = null,
-    val comment: kotlin.String? = null
+    val smoke: kotlin.Boolean = false,
+    val escape: kotlin.Boolean = false,
+    val violent: kotlin.Boolean = false,
+    val suicide: kotlin.Boolean = false,
+    val comment: kotlin.String = ""
 ) {
 }

@@ -34,6 +34,7 @@ data class Location (
     val parentId: kotlin.Int? = null,
     val rfId: kotlin.String? = null,
     val persons: kotlin.Array<PersonState>? = null,
-    val children: kotlin.Array<Location>? = null
+    val children: kotlin.Array<Location> = emptyArray(),
+    var selected: Boolean = false
 ) {
 }

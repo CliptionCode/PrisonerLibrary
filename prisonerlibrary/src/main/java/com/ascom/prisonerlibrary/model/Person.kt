@@ -13,6 +13,7 @@ package io.swagger.client.models
 
 import io.swagger.client.models.PersonBasic
 import io.swagger.client.models.PersonDetails
+import util.PersonUtils
 
 /**
  * 
@@ -21,7 +22,7 @@ import io.swagger.client.models.PersonDetails
  */
 data class Person (
 
-    val basic: PersonBasic? = null,
-    val details: PersonDetails? = null
+    val basic: PersonBasic = PersonBasic(),
+    val details: PersonDetails = PersonDetails()
 ) {
 }
