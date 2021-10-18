@@ -4,6 +4,8 @@ plugins {
     id 'maven-publish'
 }
 
+group ='com.ascom.prisonerlibrary'
+
 android {
     compileSdk 30
 
