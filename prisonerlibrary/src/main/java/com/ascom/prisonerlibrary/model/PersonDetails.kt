@@ -1,6 +1,6 @@
 /**
  * Ascom Prisoner API
- * This is the Ascom REST Interface for Locations, Users, Persons and Appointments. You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/). 
+ * This is the Ascom REST Interface for Locations, Users, Persons and Appointments. You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).
  *
  * OpenAPI spec version: 1.0.0
  * Contact: alessandro.marra@ascom.com
@@ -9,36 +9,29 @@
  * https://github.com/swagger-api/swagger-codegen.git
  * Do not edit the class manually.
  */
-package io.swagger.client.models
-
-import io.swagger.client.models.AppointmentSimple
-import io.swagger.client.models.FlexibleAppointmentSimple
-import io.swagger.client.models.PersonBehavior
-import io.swagger.client.models.PersonPrimaryData
-import io.swagger.client.models.PersonSecondaryData
-import io.swagger.client.models.PersonSimple
+package com.ascom.prisonerlibrary.model
 
 /**
- * 
- * @param primary 
+ *
+ * @param primary
  * @param flexibleAppointments A list of Flexible Appointments
  * @param appointments A list of Appointments
  * @param collusion A list of other Person
  * @param aliases A list of Alias
- * @param behavior 
- * @param secondary 
+ * @param behavior
+ * @param secondary
  */
-data class PersonDetails (
+data class PersonDetails(
 
     val primary: PersonPrimaryData? = null,
     /* A list of Flexible Appointments */
-    val flexibleAppointments: kotlin.Array<FlexibleAppointmentSimple>? = null,
+    val flexibleAppointments: kotlin.Array<FlexibleAppointmentLite>? = null,
     /* A list of Appointments */
-    val appointments: kotlin.Array<AppointmentSimple>? = null,
+    val appointments: kotlin.Array<AppointmentLite>? = null,
     /* A list of other Person */
-    val collusion: kotlin.Array<PersonSimple>? = null,
+    val collusion: kotlin.Array<PersonLite>? = null,
     /* A list of Alias */
-    val aliases: kotlin.Array<PersonSimple>? = null,
+    val aliases: kotlin.Array<PersonLite>? = null,
     val behavior: PersonBehavior = PersonBehavior(),
     val secondary: PersonSecondaryData? = null
 ) {

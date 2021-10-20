@@ -9,14 +9,14 @@
  * https://github.com/swagger-api/swagger-codegen.git
  * Do not edit the class manually.
  */
-package io.swagger.client.models
+package com.ascom.prisonerlibrary.model
 
 
 /**
  * 
  * @param version 
  */
-data class Version (
+data class Info (
 
     val version: kotlin.String? = null
 ) {

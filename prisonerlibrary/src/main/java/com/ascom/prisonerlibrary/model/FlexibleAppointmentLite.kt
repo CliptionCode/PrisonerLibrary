@@ -9,7 +9,7 @@
  * https://github.com/swagger-api/swagger-codegen.git
  * Do not edit the class manually.
  */
-package io.swagger.client.models
+package com.ascom.prisonerlibrary.model
 
 
 /**
@@ -17,7 +17,7 @@ package io.swagger.client.models
  * @param counter 
  * @param type 0 Walk, 1 Shower, 2 Meal
  */
-data class FlexibleAppointmentSimple (
+data class FlexibleAppointmentLite (
 
     val counter: kotlin.Int? = null,
     /* 0 Walk, 1 Shower, 2 Meal */

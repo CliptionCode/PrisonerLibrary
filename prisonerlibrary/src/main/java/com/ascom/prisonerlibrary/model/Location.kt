@@ -1,6 +1,6 @@
 /**
  * Ascom Prisoner API
- * This is the Ascom REST Interface for Locations, Users, Persons and Appointments. You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/). 
+ * This is the Ascom REST Interface for Locations, Users, Persons and Appointments. You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).
  *
  * OpenAPI spec version: 1.0.0
  * Contact: alessandro.marra@ascom.com
@@ -9,23 +9,19 @@
  * https://github.com/swagger-api/swagger-codegen.git
  * Do not edit the class manually.
  */
-package io.swagger.client.models
-
-import io.swagger.client.models.Location
-import io.swagger.client.models.LocationLite
-import io.swagger.client.models.PersonState
+package com.ascom.prisonerlibrary.model
 
 /**
- * 
- * @param id 
- * @param name 
+ *
+ * @param id
+ * @param name
  * @param kind 0 Floor, 1 Room, 2 Bed, 3 Shower
- * @param parentId 
- * @param rfId 
- * @param persons 
- * @param children 
+ * @param parentId
+ * @param rfId
+ * @param persons
+ * @param children
  */
-data class Location (
+data class Location(
 
     val id: kotlin.Int? = null,
     val name: kotlin.String? = null,

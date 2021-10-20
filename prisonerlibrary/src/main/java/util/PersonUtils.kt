@@ -1,6 +1,6 @@
 package util
 
-import io.swagger.client.models.Person
+import com.ascom.prisonerlibrary.model.Person
 import java.text.DateFormat
 import java.time.ZoneId
 import java.util.*

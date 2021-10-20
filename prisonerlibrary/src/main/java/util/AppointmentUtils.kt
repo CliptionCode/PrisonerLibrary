@@ -1,6 +1,5 @@
 package util
 
-import io.swagger.client.models.Person
 import java.text.DateFormat
 import java.time.LocalDate
 import java.time.ZoneId

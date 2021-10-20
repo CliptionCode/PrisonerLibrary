@@ -9,10 +9,7 @@
  * https://github.com/swagger-api/swagger-codegen.git
  * Do not edit the class manually.
  */
-package io.swagger.client.models
-
-import io.swagger.client.models.AppointmentState
-import io.swagger.client.models.LocationLite
+package com.ascom.prisonerlibrary.model
 
 /**
  * 
@@ -24,7 +21,7 @@ import io.swagger.client.models.LocationLite
  * @param state 
  * @param location 
  */
-data class AppointmentSimple (
+data class AppointmentLite (
 
     val id: kotlin.String? = null,
     val type: kotlin.String? = null,

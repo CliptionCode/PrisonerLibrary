@@ -1,6 +1,6 @@
 /**
  * Ascom Prisoner API
- * This is the Ascom REST Interface for Locations, Users, Persons and Appointments. You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/). 
+ * This is the Ascom REST Interface for Locations, Users, Persons and Appointments. You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).
  *
  * OpenAPI spec version: 1.0.0
  * Contact: alessandro.marra@ascom.com
@@ -9,26 +9,21 @@
  * https://github.com/swagger-api/swagger-codegen.git
  * Do not edit the class manually.
  */
-package io.swagger.client.models
-
-import io.swagger.client.models.AppointmentSimple
-import io.swagger.client.models.AppointmentState
-import io.swagger.client.models.LocationLite
-import io.swagger.client.models.PersonSimple
+package com.ascom.prisonerlibrary.model
 
 /**
- * 
- * @param id 
- * @param type 
- * @param startTime 
- * @param endTime 
- * @param text 
- * @param state 
- * @param location 
- * @param person 
- * @param note 
+ *
+ * @param id
+ * @param type
+ * @param startTime
+ * @param endTime
+ * @param text
+ * @param state
+ * @param location
+ * @param person
+ * @param note
  */
-data class Appointment (
+data class Appointment(
 
     val id: kotlin.String? = null,
     val type: kotlin.String? = null,
@@ -37,7 +32,7 @@ data class Appointment (
     val text: kotlin.String? = null,
     val state: AppointmentState? = null,
     val location: LocationLite? = null,
-    val person: PersonSimple? = null,
+    val person: PersonLite? = null,
     val note: kotlin.String? = null
 ) {
 }

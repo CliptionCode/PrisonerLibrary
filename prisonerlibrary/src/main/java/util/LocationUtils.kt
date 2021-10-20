@@ -1,6 +1,6 @@
 package util
 
-import io.swagger.client.models.Location
+import com.ascom.prisonerlibrary.model.Location
 
 object LocationUtils {
     fun getAllCells(inLocation: Location): List<Location> {
@@ -39,7 +39,7 @@ object LocationUtils {
         return allLocations.distinctBy { it.id }
     }
 
-    fun changeSelectedOfMeAndAllChildren(inRootLocation: Location?,inChildren: Array<Location>, inSelected: Boolean) {
+    fun changeSelectedOfMeAndAllChildren(inRootLocation: Location?, inChildren: Array<Location>, inSelected: Boolean) {
         if(inRootLocation != null){
             inRootLocation.selected = inSelected
         }
